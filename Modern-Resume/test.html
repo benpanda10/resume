@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 1000px;
+        }
+
+        .item1 {
+            background-color: lawngreen;
+        }
+
+        .item2 {
+            background-color: pink;
+            grid-column: span 3;
+        }
+
+        .flex-container {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">
+
+
+            <div class="flex-container">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti hic eum voluptatem et facilis natus aut, eveniet fugit provident vel similique, veniam illum. Tempora iste quam at numquam totam fuga necessitatibus suscipit cupiditate minus facilis laudantium exercitationem illo ea labore inventore, similique nostrum maiores culpa voluptatem eveniet vero accusantium? Explicabo, eveniet? In cum at quidem assumenda architecto tempora recusandae maiores harum consequuntur aut labore, odio dolores, inventore hic nostrum quas fugit! Id iure commodi earum sapiente laudantium perferendis quos aperiam</p>
+            </div>
+        </div>
+        <div class="grid-item item2"></div>
+    </div>
+</body>
+</html>

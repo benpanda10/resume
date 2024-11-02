@@ -1,0 +1,103 @@
+/* Setup */
+
+:root {
+    background-color: rgb(236, 234, 234);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p, li {
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+/* Container */
+
+.paper-container {
+    max-width: 794px;
+    margin: 30px auto;
+    background-color: white;
+    box-shadow: 15px 15px 20px rgb(220, 210, 210);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.item1 {
+    background-color: #313e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* @Media */
+
+@media (max-width: 550px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-container > .item2 {
+        background-color: white;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+
+/* Item 1: Left Side */
+
+#profile-pic {
+    width: 50%;
+    border: 3px solid white;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    
+}
+
+hr {
+    margin: 10px 0 20px 0;
+}
+
+.item1 > h3 {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.item1 > p {
+    margin: 10px 0 10px 0;
+    text-align: left;
+}
+
+/* Item 2: Right side */
+
+.item2 {
+    grid-column: span 2;
+    margin: 20px;
+}
+
+.item2 > h2 {
+    color: #313e50;
+    margin: 20px 0 20px 0;
+}
+
+/* Work Experience */
+
+.experience-date {
+    font-style: italic;
+    font-weight: 50;
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;  
+}
